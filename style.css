@@ -1,0 +1,128 @@
+
+/* Import Google Font correctly */
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
+
+/* A simple CSS reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Cairo Play", sans-serif;
+}
+
+/* Reset for images to ensure they are 100% of the parent container width */
+img {
+    width: 100%;
+}
+
+/* Icon Bar Styling */
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.icon-bar .active {
+    background-color: #04AA6D;
+}
+
+/* The Hero Section Styling - Use your own Hero Image URL here */
+.hero {
+    background-image: url('images/webpage_header.png'); /* Update this path */
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* BIG text styling for the hero section text */
+.hero-text {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+/* Topic Title Styling */
+.topic-title {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    padding: 0.1em 3em;
+    background-color: rgb(71, 71, 71);
+}
+
+/* Three-column grid with a nice big gap */
+.topic-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6em;
+    width: 70%;
+    margin: 3em auto;
+}
+
+/* Styling for the individual topic cards (rounded edges, background color, drop shadow) */
+.topic-card {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Second content section with a three-column grid */
+.topic-content2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6em;
+    width: 100%;
+    margin: 5em auto;
+}
+
+/* Styling for the second set of topic cards */
+.topic-card2 {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the second set of topic card text */
+.topic-card2-text {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+/* Styling for the topic card titles */
+.topic-card-text {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+/* Styling for a footer section */
+.footer {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    text-align: right;
+    padding: 3em;
+}
